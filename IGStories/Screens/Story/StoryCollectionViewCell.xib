@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoryCollectionViewCell" customModule="IGStories" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="259"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="259"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czm-Ce-UZF">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="259"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hc-y7-xVH">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="259"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-DK-sOn">
+                        <rect key="frame" x="0.0" y="60" width="240" height="199"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-iV-qOx" customClass="StoryHeaderView" customModule="IGStories" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="J4e-Zp-by9"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bu görsele şu anda erişelemiyor." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-Zs-5WH">
+                        <rect key="frame" x="20" y="111.5" width="200" height="36"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4xs-DK-sOn" secondAttribute="bottom" id="3wl-QG-mRo"/>
+                <constraint firstItem="uC3-iV-qOx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8HW-dK-39v"/>
+                <constraint firstItem="zHV-Zs-5WH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="A9s-gd-7t5"/>
+                <constraint firstAttribute="bottom" secondItem="czm-Ce-UZF" secondAttribute="bottom" id="JzB-Np-qto"/>
+                <constraint firstItem="4xs-DK-sOn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LIf-yC-WZ0"/>
+                <constraint firstAttribute="trailing" secondItem="uC3-iV-qOx" secondAttribute="trailing" id="MZh-hY-y1L"/>
+                <constraint firstAttribute="trailing" secondItem="4xs-DK-sOn" secondAttribute="trailing" id="Zk1-aa-K9p"/>
+                <constraint firstAttribute="trailing" secondItem="czm-Ce-UZF" secondAttribute="trailing" id="ZqV-fG-dlz"/>
+                <constraint firstItem="zHV-Zs-5WH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Zsb-W3-HyR"/>
+                <constraint firstItem="zHV-Zs-5WH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="cEA-ei-RE5"/>
+                <constraint firstAttribute="trailing" secondItem="zHV-Zs-5WH" secondAttribute="trailing" constant="20" id="dCO-9N-R76"/>
+                <constraint firstItem="4xs-DK-sOn" firstAttribute="top" secondItem="uC3-iV-qOx" secondAttribute="bottom" id="hnh-De-faS"/>
+                <constraint firstItem="1hc-y7-xVH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i1X-Uu-Zwz"/>
+                <constraint firstItem="czm-Ce-UZF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="idb-6a-hj5"/>
+                <constraint firstItem="uC3-iV-qOx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ieu-Fc-zuZ"/>
+                <constraint firstItem="czm-Ce-UZF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oF3-VJ-Xut"/>
+                <constraint firstAttribute="bottom" secondItem="1hc-y7-xVH" secondAttribute="bottom" id="rUq-WC-rfd"/>
+                <constraint firstItem="1hc-y7-xVH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tW2-Ah-TTX"/>
+                <constraint firstAttribute="trailing" secondItem="1hc-y7-xVH" secondAttribute="trailing" id="vxl-Rf-hxe"/>
+            </constraints>
+            <size key="customSize" width="240" height="259"/>
+            <connections>
+                <outlet property="errorLabel" destination="zHV-Zs-5WH" id="58a-eo-1cD"/>
+                <outlet property="gesturesContainerView" destination="4xs-DK-sOn" id="Vlg-Kv-dMU"/>
+                <outlet property="headerView" destination="uC3-iV-qOx" id="Ll4-Bh-e4c"/>
+                <outlet property="imageView" destination="czm-Ce-UZF" id="een-6B-RFS"/>
+                <outlet property="videoPlayerView" destination="1hc-y7-xVH" id="EpH-eH-v8X"/>
+            </connections>
+            <point key="canvasLocation" x="275.36231884057975" y="33.147321428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>

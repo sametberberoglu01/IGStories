@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="IGStories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHv-si-nkp">
+                                <rect key="frame" x="0.0" y="88" width="414" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="tsn-sV-Ubd"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nJI-3w-Z3N">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Jh6-vP-uvA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gye-Tv-R6y"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ts8-Kh-sfy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_instagramLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BZa-5L-M2p">
+                                        <rect key="frame" x="147" y="45" width="120" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="Pwr-FH-6xU"/>
+                                            <constraint firstAttribute="width" constant="120" id="vLU-lL-a7n"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BZa-5L-M2p" secondAttribute="bottom" id="Tch-nS-hsC"/>
+                                    <constraint firstItem="BZa-5L-M2p" firstAttribute="centerX" secondItem="ts8-Kh-sfy" secondAttribute="centerX" id="zjh-Jl-Ftf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zna-1j-CWZ">
+                                <rect key="frame" x="0.0" y="178" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="npQ-75-I8i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ts8-Kh-sfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0EB-qP-eOb"/>
+                            <constraint firstItem="ts8-Kh-sfy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Bt1-bW-jiW"/>
+                            <constraint firstItem="RHv-si-nkp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Dnn-30-ZO6"/>
+                            <constraint firstItem="RHv-si-nkp" firstAttribute="top" secondItem="ts8-Kh-sfy" secondAttribute="bottom" id="E11-5D-Dqp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ts8-Kh-sfy" secondAttribute="trailing" id="OUb-1r-ZPO"/>
+                            <constraint firstItem="ts8-Kh-sfy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PN5-1b-89n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zna-1j-CWZ" secondAttribute="trailing" id="RFL-BX-6Zx"/>
+                            <constraint firstItem="zna-1j-CWZ" firstAttribute="top" secondItem="RHv-si-nkp" secondAttribute="bottom" id="Rlx-Te-5yf"/>
+                            <constraint firstItem="zna-1j-CWZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ew2-2b-RUD"/>
+                            <constraint firstItem="RHv-si-nkp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pzO-5q-voG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="RHv-si-nkp" id="kDv-Ce-cZn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="B0F-ks-Hv8">
+            <objects>
+                <viewController storyboardIdentifier="StoryViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="bjU-fP-xNF" customClass="StoryViewController" customModule="IGStories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gZf-3v-NyX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xxu-x3-A6I">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="l1r-Wo-P6a" customClass="CubeAnimatedCollectionViewLayout" customModule="IGStories" customModuleProvider="target"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bjU-fP-xNF" id="qzi-f7-lVR"/>
+                                    <outlet property="delegate" destination="bjU-fP-xNF" id="irt-he-DKD"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yDe-Nx-zJE" firstAttribute="bottom" secondItem="Xxu-x3-A6I" secondAttribute="bottom" id="6eb-sH-ia2"/>
+                            <constraint firstItem="Xxu-x3-A6I" firstAttribute="top" secondItem="yDe-Nx-zJE" secondAttribute="top" id="Faa-sF-uS5"/>
+                            <constraint firstItem="Xxu-x3-A6I" firstAttribute="trailing" secondItem="yDe-Nx-zJE" secondAttribute="trailing" id="t1n-V9-V02"/>
+                            <constraint firstItem="Xxu-x3-A6I" firstAttribute="leading" secondItem="yDe-Nx-zJE" secondAttribute="leading" id="vMW-Ba-GOI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yDe-Nx-zJE"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Xxu-x3-A6I" id="Cfg-Yj-Vpk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAs-Nx-ClO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.68115942028987" y="130.58035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_instagramLogo" width="120" height="43"/>
+    </resources>
+</document>
